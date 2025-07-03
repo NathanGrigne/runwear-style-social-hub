@@ -1,0 +1,66 @@
+
+import { Button } from "@/components/ui/button";
+import { Smartphone, Menu } from "lucide-react";
+import { useState } from "react";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-50 bg-white-pure/90 backdrop-blur-md border-b border-gray-200">
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-to-br from-orange-punchy to-blue-electric rounded-lg flex items-center justify-center">
+              <Smartphone className="w-5 h-5 text-white" />
+            </div>
+            <span className="text-2xl font-oswald font-bold text-black-coal">RunWear</span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <a href="#features" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Features</a>
+            <a href="#preview" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Preview</a>
+            <a href="#community" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Community</a>
+          </nav>
+
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button variant="outline" className="border-gray-300 text-gray-700 hover:border-orange-punchy hover:text-orange-punchy">
+              Login
+            </Button>
+            <Button className="bg-orange-punchy hover:bg-orange-punchy/90 text-white font-medium">
+              Download App
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <Menu className="w-6 h-6 text-gray-700" />
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
+            <nav className="flex flex-col space-y-4 mt-4">
+              <a href="#features" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Features</a>
+              <a href="#preview" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Preview</a>
+              <a href="#community" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Community</a>
+              <div className="flex flex-col space-y-2 pt-2">
+                <Button variant="outline" className="border-gray-300 text-gray-700">Login</Button>
+                <Button className="bg-orange-punchy hover:bg-orange-punchy/90 text-white">Download App</Button>
+              </div>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
