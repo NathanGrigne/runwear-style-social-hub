@@ -32,29 +32,6 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="flex items-center space-x-8">
-              <div className="flex items-center space-x-2">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 bg-orange-punchy rounded-full border-2 border-white"></div>
-                  <div className="w-8 h-8 bg-blue-electric rounded-full border-2 border-white"></div>
-                  <div className="w-8 h-8 bg-gray-400 rounded-full border-2 border-white"></div>
-                </div>
-                <span className="text-sm font-medium text-gray-600">
-                  <Users className="w-4 h-4 inline mr-1" />
-                  50K+ users
-                </span>
-              </div>
-              
-              <div className="flex items-center space-x-1">
-                <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                <span className="text-sm font-medium text-gray-600 ml-2">4.9 rating</span>
-              </div>
-            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">

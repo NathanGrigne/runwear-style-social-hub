@@ -27,9 +27,6 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-gray-300 text-gray-700 hover:border-orange-punchy hover:text-orange-punchy">
-              Login
-            </Button>
             <Button className="bg-orange-punchy hover:bg-orange-punchy/90 text-white font-medium">
               Download App
             </Button>
@@ -52,7 +49,6 @@ const Header = () => {
               <a href="#preview" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Preview</a>
               <a href="#community" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Community</a>
               <div className="flex flex-col space-y-2 pt-2">
-                <Button variant="outline" className="border-gray-300 text-gray-700">Login</Button>
                 <Button className="bg-orange-punchy hover:bg-orange-punchy/90 text-white">Download App</Button>
               </div>
             </nav>

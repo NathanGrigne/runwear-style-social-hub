@@ -38,12 +38,6 @@ const Features = () => {
       color: "from-pink-500 to-rose-500"
     },
     {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Trend Analytics",
-      description: "See which pieces you wear most and discover new styling opportunities.",
-      color: "from-purple-500 to-violet-500"
-    },
-    {
       icon: <Users className="w-8 h-8" />,
       title: "Community Feed",
       description: "Get inspired by outfits from runners, gym enthusiasts, and athletes worldwide.",

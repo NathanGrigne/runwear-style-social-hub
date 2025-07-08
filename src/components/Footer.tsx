@@ -26,14 +26,6 @@ const Footer = () => {
               <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
               Download for iOS
             </Button>
-            
-            <Button 
-              size="lg" 
-              className="bg-blue-electric hover:bg-blue-electric/90 text-white font-medium px-8 py-4 text-lg group"
-            >
-              <Play className="w-5 h-5 mr-2 group-hover:animate-bounce" />
-              Download for Android
-            </Button>
           </div>
         </div>
 
