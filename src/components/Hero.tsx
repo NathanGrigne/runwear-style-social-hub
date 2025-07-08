@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="space-y-8 animate-slide-in-left">
             <div className="space-y-4">
               <Badge className="bg-orange-punchy/10 text-orange-punchy border-orange-punchy/20 hover:bg-orange-punchy/20">
-                🔥 Now Available on iOS & Android
+                🔥 Now Available on iOS
               </Badge>
               
               <h1 className="text-5xl lg:text-7xl font-oswald font-bold text-black-coal leading-tight">
@@ -41,15 +41,6 @@ const Hero = () => {
               >
                 <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
                 Download Free
-              </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-gray-300 hover:border-blue-electric text-gray-700 hover:text-blue-electric px-8 py-4 text-lg group"
-              >
-                <Play className="w-5 h-5 mr-2 group-hover:text-blue-electric" />
-                Watch Demo
               </Button>
             </div>
           </div>

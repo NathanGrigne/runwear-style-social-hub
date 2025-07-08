@@ -95,22 +95,8 @@ const Features = () => {
                     Join the RunWear Community
                   </h3>
                   <p className="text-lg font-inter opacity-90 mb-6">
-                    Connect with thousands of athletes sharing their favorite gear combinations.
+                    Connect with athletes sharing their favorite gear combinations.
                   </p>
-                  <div className="flex items-center space-x-6">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold">50K+</div>
-                      <div className="text-sm opacity-80">Active Users</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold">200K+</div>
-                      <div className="text-sm opacity-80">Outfits Shared</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold">1M+</div>
-                      <div className="text-sm opacity-80">Likes Given</div>
-                    </div>
-                  </div>
                 </div>
                 {/* Background decoration */}
                 <div className="absolute top-4 right-4 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
