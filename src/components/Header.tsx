@@ -27,7 +27,10 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button className="bg-orange-punchy hover:bg-orange-punchy/90 text-white font-medium">
+            <Button 
+              className="bg-orange-punchy hover:bg-orange-punchy/90 text-white font-medium"
+              onClick={() => window.open('https://taap.it/KDnwkP', '_blank')}
+            >
               Download App
             </Button>
           </div>
@@ -49,7 +52,12 @@ const Header = () => {
               <a href="#preview" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Preview</a>
               <a href="#community" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">Community</a>
               <div className="flex flex-col space-y-2 pt-2">
-                <Button className="bg-orange-punchy hover:bg-orange-punchy/90 text-white">Download App</Button>
+                <Button 
+                  className="bg-orange-punchy hover:bg-orange-punchy/90 text-white"
+                  onClick={() => window.open('https://taap.it/KDnwkP', '_blank')}
+                >
+                  Download App
+                </Button>
               </div>
             </nav>
           </div>
