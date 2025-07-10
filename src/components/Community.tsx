@@ -63,9 +63,9 @@ const Community = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-oswald font-bold text-black-coal mb-4">
-            Join the 
+            Join the
             <span className="text-transparent bg-gradient-to-r from-orange-punchy to-blue-electric bg-clip-text">
-              RunWear Community
+              &nbsp;RunWear Community
             </span>
           </h2>
           <p className="text-xl text-gray-600 font-inter max-w-2xl mx-auto">
