@@ -107,7 +107,7 @@ const Features = () => {
             </Card>
           </div>
           
-          <div className="space-y-6" Style="display: flex; flex-direction: column; justify-content: center;">
+          <div className="space-y-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             {[
               { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit1') },
               { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit2') },

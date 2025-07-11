@@ -24,39 +24,12 @@ const AppPreview = () => {
           {/* My Collections & Wardrobe */}
           <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <CardContent className="p-6">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 mb-6">
-                {/* Tab Navigation */}
-                <div className="flex space-x-6 mb-4">
-                  <h3 className="font-oswald font-bold text-lg text-blue-electric border-b-2 border-blue-electric pb-1">My collections</h3>
-                  <h3 className="font-oswald font-medium text-gray-500">My wardrobe</h3>
-                </div>
-                
-                {/* Clothing Grid */}
-                <div className="space-y-4">
-                  <div className="bg-white p-4 rounded-xl">
-                    <div className="grid grid-cols-3 gap-3 mb-3">
-                      <div className="bg-gray-200 rounded-lg p-3 text-center">
-                        <div className="w-full h-12 bg-gray-300 rounded mb-2"></div>
-                        <p className="text-xs font-medium">TOP</p>
-                        <p className="text-xs text-gray-500">SATISFY T-SHIRT</p>
-                      </div>
-                      <div className="bg-gray-200 rounded-lg p-3 text-center">
-                        <div className="w-full h-12 bg-orange-punchy/20 rounded mb-2"></div>
-                        <p className="text-xs font-medium">BOTTOM</p>
-                        <p className="text-xs text-gray-500">SOAR SHORT</p>
-                      </div>
-                      <div className="bg-black rounded-lg p-3 text-center text-white">
-                        <div className="w-full h-12 bg-gray-800 rounded mb-2"></div>
-                        <p className="text-xs font-medium">SOCKS</p>
-                        <p className="text-xs text-gray-400">TRACKSMITH SOCKS</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <p className="font-medium text-sm">Sunset Grind</p>
-                      <Edit className="w-4 h-4 text-gray-400" />
-                    </div>
-                  </div>
-                </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-4 mb-6">
+                <img 
+                  src="/lovable-uploads/75306a97-f385-4e43-aa2c-98a9864052cf.png" 
+                  alt="RunWear app wardrobe interface" 
+                  className="w-full h-auto rounded-xl shadow-lg"
+                />
               </div>
               
               <h4 className="font-oswald font-bold text-black-coal mb-2">Smart Collections</h4>
