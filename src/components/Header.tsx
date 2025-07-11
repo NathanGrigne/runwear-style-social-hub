@@ -25,7 +25,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">{t('nav.features')}</a>
             <a href="#preview" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">{t('nav.preview')}</a>
-            <a href="#community" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">{t('nav.community')}</a>
+            {/* <a href="#community" className="text-gray-600 hover:text-orange-punchy transition-colors font-medium">{t('nav.community')}</a> */}
           </nav>
 
           {/* CTA Buttons */}
