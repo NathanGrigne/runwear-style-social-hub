@@ -10,37 +10,40 @@ import {
   CheckCircle,
   Share2
 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Features = () => {
+  const { t } = useLanguage();
+  
   const features = [
     {
       icon: <Shirt className="w-8 h-8" />,
-      title: "Smart Wardrobe",
-      description: "Organize by brand, model, and type. Tag your Nike Air Max, Adidas Ultraboost, and more.",
+      title: t('features.smartWardrobe.title'),
+      description: t('features.smartWardrobe.description'),
       color: "from-blue-electric to-blue-500"
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
-      title: "Outfit Creator",
-      description: "Mix and match your gear to create the perfect look for any workout or occasion.",
+      title: t('features.outfitCreator.title'),
+      description: t('features.outfitCreator.description'),
       color: "from-orange-punchy to-red-500"
     },
     {
       icon: <Share2 className="w-8 h-8" />,
-      title: "Social Sharing",
-      description: "Show off your style! Share outfits with friends and the RunWear community.",
+      title: t('features.socialSharing.title'),
+      description: t('features.socialSharing.description'),
       color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Like & Comment",
-      description: "Engage with friends' outfits. Give likes and leave encouraging comments.",
+      title: t('features.likeComment.title'),
+      description: t('features.likeComment.description'),
       color: "from-pink-500 to-rose-500"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Community Feed",
-      description: "Get inspired by outfits from runners, gym enthusiasts, and athletes worldwide.",
+      title: t('features.communityFeed.title'),
+      description: t('features.communityFeed.description'),
       color: "from-cyan-500 to-blue-400"
     }
   ];
@@ -50,14 +53,13 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-oswald font-bold text-black-coal mb-4">
-            Everything You Need to 
+            {t('features.title1')} 
             <span className="text-transparent bg-gradient-to-r from-orange-punchy to-blue-electric bg-clip-text block">
-              Level Up Your Style
+              {t('features.title2')}
             </span>
           </h2>
           <p className="text-xl text-gray-600 font-inter max-w-2xl mx-auto">
-            From organizing your collection to sharing with friends, RunWear has all the tools 
-            to make your athletic wardrobe work for you.
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -92,10 +94,10 @@ const Features = () => {
               <CardContent className="p-8 relative">
                 <div className="relative z-10">
                   <h3 className="text-3xl font-oswald font-bold mb-4">
-                    Join the RunWear Community
+                    {t('features.communityCard.title')}
                   </h3>
                   <p className="text-lg font-inter opacity-90 mb-6">
-                    Connect with athletes sharing their favorite gear combinations.
+                    {t('features.communityCard.description')}
                   </p>
                 </div>
                 {/* Background decoration */}
@@ -107,10 +109,10 @@ const Features = () => {
           
           <div className="space-y-6">
             {[
-              { icon: <CheckCircle className="w-5 h-5" />, text: "Free to download & use" },
-              { icon: <CheckCircle className="w-5 h-5" />, text: "No ads or hidden fees" },
-              { icon: <CheckCircle className="w-5 h-5" />, text: "Regular updates & new features" },
-              { icon: <CheckCircle className="w-5 h-5" />, text: "Cross-platform sync" }
+              { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit1') },
+              { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit2') },
+              { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit3') },
+              { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit4') }
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-3 text-gray-700">
                 <div className="text-green-500">{item.icon}</div>

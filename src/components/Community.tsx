@@ -2,8 +2,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Heart, MessageCircle, User, Star } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Community = () => {
+  const { t } = useLanguage();
   const posts = [
     {
       user: "@mike_runner",

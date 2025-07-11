@@ -2,8 +2,10 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Download, Play, Star, Users } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-20 lg:py-32 relative overflow-hidden">
       {/* Background Elements */}
@@ -16,19 +18,18 @@ const Hero = () => {
           <div className="space-y-8 animate-slide-in-left">
             <div className="space-y-4">
               <Badge className="bg-orange-punchy/10 text-orange-punchy border-orange-punchy/20 hover:bg-orange-punchy/20">
-                🔥 Now Available on iOS
+                🔥 {t('hero.availableOn')}
               </Badge>
               
               <h1 className="text-5xl lg:text-7xl font-oswald font-bold text-black-coal leading-tight">
-                Organize Your
+                {t('hero.title1')}
                 <span className="text-transparent bg-gradient-to-r from-orange-punchy to-blue-electric bg-clip-text block">
-                  Sport Wardrobe
+                  {t('hero.title2')}
                 </span>
               </h1>
               
               <p className="text-xl text-gray-600 font-inter leading-relaxed max-w-lg">
-                Create stunning outfits, share with friends, and discover new combinations. 
-                RunWear makes organizing your athletic wear fun and social.
+                {t('hero.subtitle')}
               </p>
             </div>
 
@@ -41,7 +42,7 @@ const Hero = () => {
                 onClick={() => window.open('https://taap.it/KDnwkP', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
-                Download Free
+                {t('hero.downloadFree')}
               </Button>
             </div>
           </div>
