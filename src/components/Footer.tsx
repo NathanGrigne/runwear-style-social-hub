@@ -46,7 +46,7 @@ const Footer = () => {
               {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com" target="_blank">
+              <a href="https://taap.it/S88WLE" target="_blank">
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors cursor-pointer">
                   <img 
                     src="/lovable-uploads/instagram.svg" 
@@ -55,7 +55,7 @@ const Footer = () => {
                   />
                 </div>
               </a>
-              <a href="https://tiktok.com" target="_blank">
+              <a href="https://taap.it/yNyNyQ" target="_blank">
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors cursor-pointer">
                   <img 
                     src="/lovable-uploads/tiktok.svg" 
