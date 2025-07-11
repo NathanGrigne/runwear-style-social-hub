@@ -107,12 +107,12 @@ const Features = () => {
             </Card>
           </div>
           
-          <div className="space-y-6">
+          <div className="space-y-6" Style="display: flex; flex-direction: column; justify-content: center;">
             {[
               { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit1') },
               { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit2') },
-              { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit3') },
-              { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit4') }
+              { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit3') }
+              // { icon: <CheckCircle className="w-5 h-5" />, text: t('features.benefit4') }
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-3 text-gray-700">
                 <div className="text-green-500">{item.icon}</div>

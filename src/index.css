@@ -90,8 +90,7 @@ All colors MUST be HSL.
   }
   
   .bg-orange-punchy {
-    /* background-color: hsl(var(--orange-punchy)); */
-    background-color: hsl(var(--blue-electric));
+    background-color: hsl(var(--orange-punchy));
   }
   
   .text-blue-electric {
