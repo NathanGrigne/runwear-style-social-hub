@@ -46,21 +46,23 @@ const Footer = () => {
               {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors cursor-pointer">
-                <img 
-                  src="/lovable-uploads/instagram.svg" 
-                  alt="Instagram logo link" 
-                  className="w-full h-auto rounded-xl shadow-lg"
-                />
-              </div>
-              <a href="google.com" target="_blank">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors cursor-pointer">
-                <img 
-                  src="/lovable-uploads/tiktok.svg" 
-                  alt="Tiktok logo link" 
-                  className="w-full h-auto rounded-xl shadow-lg"
-                />
-              </div>
+              <a href="https://instagram.com" target="_blank">
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors cursor-pointer">
+                  <img 
+                    src="/lovable-uploads/instagram.svg" 
+                    alt="Instagram logo link" 
+                    className="w-full h-auto rounded-xl shadow-lg"
+                  />
+                </div>
+              </a>
+              <a href="https://tiktok.com" target="_blank">
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors cursor-pointer">
+                  <img 
+                    src="/lovable-uploads/tiktok.svg" 
+                    alt="Tiktok logo link" 
+                    className="w-full h-auto rounded-xl shadow-lg"
+                  />
+                </div>
               </a>
             </div>
           </div>
